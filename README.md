@@ -1,16 +1,8 @@
-# Emotion Analysis NLP — Project
+# Emotion Analysis 
 
 A text emotion classifier (joy, sadness, anger, fear, love, surprise) trained on the open-source
 **dair-ai/emotion** dataset (~20k English tweets, CARER paper, Saravia et al., EMNLP 2018), deployed
 as a **Streamlit** web app.
-
-## Files
-- `Emotion_Analysis_NLP.ipynb` — full pipeline: load data → EDA → clean text → TF-IDF → train/compare
-  4 models → tune best model → evaluate on held-out test set → save model
-- `app.py` — Streamlit app that loads the saved model and classifies text you type in
-- `requirements.txt` — pinned dependencies
-- `models/` — created after you run the notebook (`emotion_model.joblib`, `tfidf_vectorizer.joblib`)
-- `data/` — created after you run the notebook (cached dataset splits)
 
 ## Setup
 
@@ -22,7 +14,7 @@ pip install -r requirements.txt
 
 ## Run it
 
-1. **Train the model** — open and run all cells in `Emotion_Analysis_NLP.ipynb` (Jupyter or VS Code).
+1. **Train the model** — open and run all cells in `Emotion_Analysis_notebook.ipynb` (Jupyter or VS Code).
    This downloads the dataset automatically (needs internet the first time), trains and saves the model
    into `models/`.
    - No internet / download blocked? The notebook prints fallback instructions to manually grab the same
